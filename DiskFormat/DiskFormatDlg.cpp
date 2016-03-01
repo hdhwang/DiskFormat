@@ -112,7 +112,7 @@ void CDiskFormatDlg::OnPaint()
 			while(pTmp[i] != '\0')
 				strDrive += pTmp[i++];
 
-			if(GetDriveType(strDrive) != DRIVE_CDROM) {
+			if (GetDriveType(strDrive) == DRIVE_REMOVABLE || GetDriveType(strDrive) == DRIVE_FIXED) {
 				c_SelectDrive.AddString(strDrive);
 				if(strcmp((LPSTR)(LPCTSTR)seldrive,"empty")==0){
 					seldrive = strDrive;
