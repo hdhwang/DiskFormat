@@ -125,9 +125,10 @@ DiskFormatClass::DiskFormatClass(){
 		memset(WCfilesystem,0,sizeof(WCfilesystem));
 		WCHAR WCvolume_lable[128];
 		memset(WCvolume_lable,0,sizeof(WCvolume_lable));
-		wcscpy(WCdrive, drive.GetBuffer(0));
-		wcscpy(WCfilesystem, filesystem.GetBuffer(0));
-		wcscpy(WCvolume_lable, volume_lable.GetBuffer(0));
+		wcscpy_s(WCdrive, drive.GetBuffer(0));
+		wcscpy_s(WCfilesystem, filesystem.GetBuffer(0));
+		wcscpy_s(WCvolume_lable, volume_lable.GetBuffer(0));
+		
 
 
 		DWORD driveType;
