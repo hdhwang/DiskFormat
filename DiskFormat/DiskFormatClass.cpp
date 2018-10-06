@@ -56,6 +56,9 @@ DiskFormatClass::DiskFormatClass(){
 	 case 2 :
 		 return _T("NTFS");
 
+	 case 3:
+		 return _T("exFAT");
+
 	 default: 
 		 return _T("");
 	 }
