@@ -33,7 +33,6 @@ CDiskFormatDlg::CDiskFormatDlg(CWnd* pParent /*=NULL*/)
 void CDiskFormatDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
-	m_Progress.SetPos(0);
 	DDX_Control(pDX, IDC_COMBO1, c_SelectDrive);
 	DDX_Control(pDX, IDC_COMBO2, c_FileSystem);
 	DDX_Control(pDX, IDC_COMBO3, C_BAU_size);
